@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://jsfiddle.net/dallas_lynn/3hf8srdg/1/show/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Javascript example - jsFiddle demo by dallas_lynn</title>
+  
+  <script type="text/javascript" src="./Quiz 1_files/mootools-core-1.4.5-nocompat.js"></script>
+  
+  
+  
+  
+  <link rel="stylesheet" type="text/css" href="./Quiz 1_files/result-light.css">
+  
+  <style type="text/css">
+    
+  </style>
+  
+
+
+<script type="text/javascript">//<![CDATA[ 
+
+function change(){
+    
+   var myNewTitle = document.getElementById('myTextField').value;
+   if( myNewTitle.length==0 ){
+       alert('Write Some real Text please.');
+   return;
+   }
+   
+   var title = document.getElementById('title');
+   title.innerHTML = myNewTitle.toUpperCase();
+    
+}
+//]]>  
+
+</script>
+
+
+</head>
+<body>
+  <h1> Enter text below and watch it be put on the screen in all caps right before your eyes!
+</h1><h3 id="title">Change Me</h3>
+<input type="text" id="myTextField">
+<input type="submit" id="byBtn" value="all CAPS" onclick="change()">
+  
+
+
+
+
+
+</body></html>
